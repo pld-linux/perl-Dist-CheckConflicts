@@ -87,5 +87,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorlib}/Dist
 %{perl_vendorlib}/Dist/CheckConflicts.pm
 %{_mandir}/man3/Dist::CheckConflicts.3pm*
