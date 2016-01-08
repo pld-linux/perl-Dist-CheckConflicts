@@ -8,20 +8,19 @@
 Summary:	Dist::CheckConflicts - declare version conflicts for your dist
 Summary(pl.UTF-8):	Dist::CheckConflicts - deklarowanie wersji będących w konflikcie z pakietem
 Name:		perl-Dist-CheckConflicts
-Version:	0.06
+Version:	0.11
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/D/DO/DOY/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	510193204fb24e24779e86b490b2d713
+Source0:	http://www.cpan.org/modules/by-module/Dist/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	c8725a92b9169708b0f63036812070f2
 URL:		http://search.cpan.org/dist/Dist-CheckConflicts/
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.30
 BuildRequires:	perl-devel >= 1:5.8.1
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-List-MoreUtils >= 0.12
-BuildRequires:	perl-Sub-Exporter
+BuildRequires:	perl-Module-Runtime >= 0.009
 BuildRequires:	perl-Test-Fatal
 BuildRequires:	perl-Test-Simple >= 0.88
 %endif
