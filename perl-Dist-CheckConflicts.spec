@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests		# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	Dist
 %define		pnam	CheckConflicts
@@ -12,9 +12,9 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Dist/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/Dist/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c8725a92b9169708b0f63036812070f2
-URL:		https://metacpan.org/release/Dist-CheckConflicts
+URL:		https://metacpan.org/dist/Dist-CheckConflicts
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.30
 BuildRequires:	perl-devel >= 1:5.8.1
 BuildRequires:	rpm-perlprov >= 4.1-13
